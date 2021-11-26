@@ -50,15 +50,66 @@
 <link rel="shortlink" href="/">
 <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F">
 <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F&#038;format=xml">
+<meta name="generator" content="Powered by Slider Revolution 6.5.7 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
 <link rel="icon" href="/wp-content/uploads/sites/23/2021/11/image-cropped-image-512logo-32x32.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/sites/23/2021/11/image-cropped-image-512logo-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/sites/23/2021/11/image-cropped-image-512logo-180x180.png">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/sites/23/2021/11/image-cropped-image-512logo-270x270.png">
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";					
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900|Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<link rel="stylesheet" id="oxygen-cache-115-css" href="/wp-content/uploads/sites/23/oxygen/css/line-115.css?cache=1636622941&#038;ver=5.8.2" type="text/css" media="all">
-<link rel="stylesheet" id="oxygen-cache-126-css" href="/wp-content/uploads/sites/23/oxygen/css/vdo-126.css?cache=1636622941&#038;ver=5.8.2" type="text/css" media="all">
-<link rel="stylesheet" id="oxygen-cache-75-css" href="/wp-content/uploads/sites/23/oxygen/css/landing-75.css?cache=1636622941&#038;ver=5.8.2" type="text/css" media="all">
-<link rel="stylesheet" id="oxygen-universal-styles-css" href="/wp-content/uploads/sites/23/oxygen/css/universal.css?cache=1636622940&#038;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="oxygen-cache-115-css" href="/wp-content/uploads/sites/23/oxygen/css/line-115.css?cache=1637952518&#038;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="oxygen-cache-129-css" href="/wp-content/uploads/sites/23/oxygen/css/provider-129.css?cache=1637952517&#038;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="oxygen-cache-126-css" href="/wp-content/uploads/sites/23/oxygen/css/vdo-126.css?cache=1637952517&#038;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="oxygen-cache-75-css" href="/wp-content/uploads/sites/23/oxygen/css/landing-75.css?cache=1637952517&#038;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="oxygen-universal-styles-css" href="/wp-content/uploads/sites/23/oxygen/css/universal.css?cache=1637952515&#038;ver=5.8.2" type="text/css" media="all">
 
 </head>
 <body class="home page-template-default page page-id-75  wp-embed-responsive oxygen-body">
@@ -247,22 +298,26 @@ ul li ul li {
 }</style>
 
 <div class="marquee1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-sag.png" alt="SAG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-wm.png" alt="WM">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-ae-sexy.png" alt="AE-sexy">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-allbet.png" alt="allbet">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-dg.png" alt="DG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-evlg.png" alt="EVLG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pmtp.png" alt="PMTP">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-ptg.png" alt="PTG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-sag.png" alt="SAG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-wm.png" alt="WM">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-ae-sexy.png" alt="AE-sexy">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-allbet.png" alt="allbet">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-dg.png" alt="DG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-evlg.png" alt="EVLG">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pmtp.png" alt="PMTP">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-ptg.png" alt="PTG">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/amb-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/evoplay-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/joker-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/netent-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/pg-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/pimpleplay-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/playstar-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/slotfactory-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/spinix-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/upg-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/amb-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/evoplay-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/joker-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/netent-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/pg-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/pimpleplay-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/playstar-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/slotfactory-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/spinix-1.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG%20Game/upg-1.png" alt="casino">
 </div>
 
 "</div></div></div>
@@ -276,53 +331,52 @@ ul li ul li {
 <title>Providergame</title>
 
 <style>.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 100%;
-}
-
-.marquee img {
-  display: inline-block;
-  padding-right: 10px;
-  animation: marquee 14s linear infinite;
-  
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(20%);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
   }
-  to {
-    transform: translateX(-600%);
+
+  .marquee img {
+    display: inline-block;
+    padding-right: 10px;
+    animation: marquee 14s linear infinite;
+
   }
-}</style>
+
+  @keyframes marquee {
+    from {
+      transform: translateX(20%);
+    }
+
+    to {
+      transform: translateX(-600%);
+    }
+  }</style>
 
 <div class="marquee">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-joker-1.png" alt="joker-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-netent-1.png" alt="netent-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pg-1.png" alt="pg-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pimpleplay-1.png" alt="pimpleplay-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-slotfactory-1.png" alt="slotfactory-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-spinix-1.png" alt="spinix-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-amb-1.png" alt="amb-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-evoplay-1.png" alt="evoplay-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-upg-1.png" alt="upg-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-joker-1.png" alt="joker-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-netent-1.png" alt="netent-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pg-1.png" alt="pg-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-pimpleplay-1.png" alt="pimpleplay-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-slotfactory-1.png" alt="slotfactory-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-spinix-1.png" alt="spinix-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-amb-1.png" alt="amb-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-evoplay-1.png" alt="evoplay-1">
-<img src="https://pages.88th.co/vrbetccc/wp-content/uploads/sites/6/2021/10/image-upg-1.png" alt="upg-1">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/AE-sexy.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/allbet.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/DG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/EVLG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/PMTP.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/PTG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/SAG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/WM.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/AE-sexy.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/allbet.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/DG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/EVLG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/PMTP.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/PTG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/SAG.png" alt="casino">
+<img src="https://assetservice.b-cdn.net/Game%20Vrbet/IMG/WM.png" alt="casino">
 </div>
 
 "</div></div>
 <div id="div_block-48-75" class="ct-div-block"><div id="div_block-49-75" class="ct-div-block"><div id="text_block-50-75" class="ct-text-block">VRBET789 คาสิโนออนไลน์คุณภาพระดับโลก<br>VRBET789&nbsp; เปิดให้บริการเกมเดิมพันออนไลน์ที่ครบครัน บริการคาสิโนออนไลน์ที่ใหญ่ที่สุดด้วย VRBET789&nbsp; ได้รับความน่าเชื่อถือมากและมีความปลอดภัยสูง เว็บเราการันตีมาตรฐานเดียวกันกับเว็บพนันสากลที่รักษาฐานข้อมูลที่เข้มข้นมีความหลากหลายครอบคลุมทุกช่องทาง ไม่ว่าจะเป็นการรองรับทุกอุปกรณ์ระบบการใช้งาน อย่าง iOS หรือ Androidหรือจะเล่นผ่านเว็บไซต์ได้เลย</div></div></div>
 <div id="div_block-51-75" class="ct-div-block"><div id="div_block-115-75" class="ct-div-block">
-<div id="-ouacfg_slider-116-75" class="oxy-ouacfg-slider oxy-ultimate-element ouacfg-slider-wrapper"> <div data-slider-lightbox="no" class="ouacfg-slider ouacfg-slider-ouacfg618ce2654930c897411758 swiper-container ouacfg-navigation-outside">
+<div id="-ouacfg_slider-116-75" class="oxy-ouacfg-slider oxy-ultimate-element ouacfg-slider-wrapper"> <div data-slider-lightbox="no" class="ouacfg-slider ouacfg-slider-ouacfg61a12c1fce789402864653 swiper-container ouacfg-navigation-outside">
 <div class="swiper-wrapper auto-height-yes">
 <div class="swiper-slide ouacfg-slider-item"> 
 <div class="ouacfg-slider-image-container">
@@ -345,56 +399,75 @@ ul li ul li {
 </div></div>
 <div id="div_block-57-75" class="ct-div-block">
 <div id="div_block-58-75" class="ct-div-block">
-<div id="div_block-59-75" class="ct-div-block"><div id="div_block-62-75" class="ct-div-block"><div id="code_block-159-75" class="ct-code-block">
-<div class="container">
-<iframe class="responsive-iframe" src="https://assetservice.b-cdn.net/Video%20VRBet/RegisterVRBET.mp4"></iframe>
-</div>
-<style>.container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 350px;
-}
-
-.responsive-iframe {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-	
-@media (max-width: 1120px) {
- 
-.container {
-  height: 220px;
-}
-@media (max-width: 992px) {
- 
-.container {
-  height: 200px;
-}
-}
-
-@media (max-width: 480px) {
- 
-.container {
-  height: 180px;
-}
-
-}</style>
+<div id="div_block-59-75" class="ct-div-block"><div id="div_block-62-75" class="ct-div-block"><div id="video-36-126" class="ct-video">
+<div class="oxygen-vsb-responsive-video-wrapper"><iframe src="https://www.youtube.com/embed/4-VLK37KhPM" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 </div></div></div>
-<div id="div_block-160-75" class="ct-div-block"><div id="div_block-161-75" class="ct-div-block"><div id="code_block-162-75" class="ct-code-block">
-<div class="container">
-<iframe class="responsive-iframe" src="https://assetservice.b-cdn.net/Video%20VRBet/openning_vrbet.mp4"></iframe>
-</div>
+<div id="div_block-160-75" class="ct-div-block"><div id="div_block-161-75" class="ct-div-block"><div id="video-37-126" class="ct-video">
+<div class="oxygen-vsb-responsive-video-wrapper"><iframe src="https://www.youtube.com/embed/4-VLK37KhPM" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 </div></div></div>
 </div>
-<div id="div_block-66-75" class="ct-div-block">
-<img id="image-68-75" alt="00" src="/wp-content/uploads/sites/23/2021/11/image-00.png" class="ct-image"><img id="image-124-75" alt="untitled 1" src="/wp-content/uploads/sites/23/2021/11/image-untitled-1-4.png" class="ct-image">
+<div id="div_block-66-75" class="ct-div-block"><div id="div_block-101-63" class="ct-div-block">
+<div id="div_block-189-63" class="ct-div-block">
+<div id="div_block-156-63" class="ct-div-block">
+<div id="div_block-157-63" class="ct-div-block"><img id="image-158-63" alt="1" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-1.webp" class="ct-image"></div>
+<div id="div_block-159-63" class="ct-div-block"><img id="image-160-63" alt="2" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-2.webp" class="ct-image"></div>
+<div id="div_block-161-63" class="ct-div-block"><img id="image-162-63" alt="3" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-3.webp" class="ct-image"></div>
+<div id="div_block-163-63" class="ct-div-block"><img id="image-164-63" alt="4" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-4.webp" class="ct-image"></div>
+<div id="div_block-165-63" class="ct-div-block"><img id="image-166-63" alt="5" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-5.webp" class="ct-image"></div>
+<div id="div_block-167-63" class="ct-div-block"><img id="image-168-63" alt="6" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-6.webp" class="ct-image"></div>
+<div id="div_block-169-63" class="ct-div-block"><img id="image-170-63" alt="7" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-7.webp" class="ct-image"></div>
+<div id="div_block-171-63" class="ct-div-block"><img id="image-172-63" alt="8" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-8.webp" class="ct-image"></div>
+<div id="div_block-173-63" class="ct-div-block"><img id="image-174-63" alt="9" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-9.webp" class="ct-image"></div>
+<div id="div_block-175-63" class="ct-div-block"><img id="image-176-63" alt="10" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-10.webp" class="ct-image"></div>
+<div id="div_block-177-63" class="ct-div-block"><img id="image-178-63" alt="11" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-11.webp" class="ct-image"></div>
+<div id="div_block-179-63" class="ct-div-block"><img id="image-180-63" alt="12" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-12.webp" class="ct-image"></div>
+<div id="div_block-181-63" class="ct-div-block"><img id="image-182-63" alt="13" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-13.webp" class="ct-image"></div>
+<div id="div_block-183-63" class="ct-div-block"><img id="image-184-63" alt="14" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-14.webp" class="ct-image"></div>
+<div id="div_block-185-63" class="ct-div-block"><img id="image-186-63" alt="22" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-22.webp" class="ct-image"></div>
+<div id="div_block-187-63" class="ct-div-block"><img id="image-188-63" alt="21" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-21.webp" class="ct-image"></div>
 </div>
+<div id="div_block-190-63" class="ct-div-block">
+<div id="div_block-211-63" class="ct-div-block"><img id="image-212-63" alt="20" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-20.webp" class="ct-image"></div>
+<div id="div_block-213-63" class="ct-div-block"><img id="image-214-63" alt="19" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-19.webp" class="ct-image"></div>
+<div id="div_block-215-63" class="ct-div-block"><img id="image-216-63" alt="18" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-18.webp" class="ct-image"></div>
+<div id="div_block-217-63" class="ct-div-block"><img id="image-218-63" alt="17" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-17.webp" class="ct-image"></div>
+<div id="div_block-219-63" class="ct-div-block"><img id="image-220-63" alt="16" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-16.webp" class="ct-image"></div>
+<div id="div_block-221-63" class="ct-div-block"><img id="image-222-63" alt="15" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-15.webp" class="ct-image"></div>
+</div>
+</div>
+<div id="div_block-223-63" class="ct-div-block">
+<div id="div_block-224-63" class="ct-div-block">
+<div id="div_block-270-63" class="ct-div-block">
+<div id="div_block-225-63" class="ct-div-block"><img id="image-226-63" alt="1" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-1.webp" class="ct-image"></div>
+<div id="div_block-227-63" class="ct-div-block"><img id="image-228-63" alt="2" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-2.webp" class="ct-image"></div>
+<div id="div_block-229-63" class="ct-div-block"><img id="image-230-63" alt="3" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-3.webp" class="ct-image"></div>
+<div id="div_block-231-63" class="ct-div-block"><img id="image-232-63" alt="4" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-4.webp" class="ct-image"></div>
+<div id="div_block-233-63" class="ct-div-block"><img id="image-234-63" alt="5" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-5.webp" class="ct-image"></div>
+<div id="div_block-235-63" class="ct-div-block"><img id="image-236-63" alt="6" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-6.webp" class="ct-image"></div>
+<div id="div_block-237-63" class="ct-div-block"><img id="image-238-63" alt="7" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-7.webp" class="ct-image"></div>
+<div id="div_block-239-63" class="ct-div-block"><img id="image-240-63" alt="8" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-8.webp" class="ct-image"></div>
+</div>
+<div id="div_block-279-63" class="ct-div-block">
+<div id="div_block-241-63" class="ct-div-block"><img id="image-242-63" alt="9" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-9.webp" class="ct-image"></div>
+<div id="div_block-243-63" class="ct-div-block"><img id="image-244-63" alt="10" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-10.webp" class="ct-image"></div>
+<div id="div_block-245-63" class="ct-div-block"><img id="image-246-63" alt="11" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-11.webp" class="ct-image"></div>
+<div id="div_block-247-63" class="ct-div-block"><img id="image-248-63" alt="12" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-12.webp" class="ct-image"></div>
+<div id="div_block-249-63" class="ct-div-block"><img id="image-250-63" alt="13" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-13.webp" class="ct-image"></div>
+<div id="div_block-251-63" class="ct-div-block"><img id="image-252-63" alt="14" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-14.webp" class="ct-image"></div>
+<div id="div_block-253-63" class="ct-div-block"><img id="image-254-63" alt="22" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-22.webp" class="ct-image"></div>
+<div id="div_block-255-63" class="ct-div-block"><img id="image-256-63" alt="21" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-21.webp" class="ct-image"></div>
+</div>
+</div>
+<div id="div_block-257-63" class="ct-div-block">
+<div id="div_block-258-63" class="ct-div-block"><img id="image-259-63" alt="20" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-20.webp" class="ct-image"></div>
+<div id="div_block-260-63" class="ct-div-block"><img id="image-261-63" alt="19" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-19.webp" class="ct-image"></div>
+<div id="div_block-262-63" class="ct-div-block"><img id="image-263-63" alt="18" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-18.webp" class="ct-image"></div>
+<div id="div_block-264-63" class="ct-div-block"><img id="image-265-63" alt="17" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-17.webp" class="ct-image"></div>
+<div id="div_block-266-63" class="ct-div-block"><img id="image-267-63" alt="16" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-16.webp" class="ct-image"></div>
+<div id="div_block-268-63" class="ct-div-block"><img id="image-269-63" alt="15" src="https://pages.88th.co/vrbaccarat88com/wp-content/uploads/sites/30/2021/11/image-15.webp" class="ct-image"></div>
+</div>
+</div>
+</div></div>
 <div id="div_block-105-75" class="ct-div-block">
 <div id="div_block-73-75" class="ct-div-block">
 <div id="div_block-96-75" class="ct-div-block">
@@ -456,10 +529,18 @@ ul li ul li {
 <div id="stars3"></div>
 </div></div> 
 <script type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+<script type="text/javascript">
 			
 				jQuery(document).ready(function($){
 										var settings = {
-						id: 'ouacfg618ce2654930c897411758',
+						id: 'ouacfg61a12c1fce789402864653',
 						type: 'coverflow',
 						initialSlide: 0,
 						spaceBetween: {
@@ -513,14 +594,14 @@ ul li ul li {
 						}
 					};
 
-					ougslider_ouacfg618ce2654930c897411758 = new OUGallerySlider(settings);
+					ougslider_ouacfg61a12c1fce789402864653 = new OUGallerySlider(settings);
 
 					function ouUpdateCarousel() {
 						setTimeout(function() {
-							if ( 'number' !== typeof ougslider_ouacfg618ce2654930c897411758.swipers.main.length ) {
-								ougslider_ouacfg618ce2654930c897411758.swipers.main.update();
+							if ( 'number' !== typeof ougslider_ouacfg61a12c1fce789402864653.swipers.main.length ) {
+								ougslider_ouacfg61a12c1fce789402864653.swipers.main.update();
 							} else {
-								ougslider_ouacfg618ce2654930c897411758.swipers.main.forEach(function(item) {
+								ougslider_ouacfg61a12c1fce789402864653.swipers.main.forEach(function(item) {
 									if ( 'undefined' !== typeof item ) {
 										item.update();
 									}
@@ -530,7 +611,7 @@ ul li ul li {
 					}
 
 					$(document).on('ou-accordion-slide-complete', function(e) {
-						if ( $(e.target).find('.ouacfg-slider-ouacfg618ce2654930c897411758').length > 0 ) {
+						if ( $(e.target).find('.ouacfg-slider-ouacfg61a12c1fce789402864653').length > 0 ) {
 							ouUpdateCarousel();
 						}
 					});
@@ -603,7 +684,11 @@ ul li ul li {
                 jQuery(window).trigger('resize');
             });
 		</script>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.7" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
 <link rel="stylesheet" id="ou-swiper-style-css" href="/wp-content/plugins/oxy-ultimate/assets/css/swiper.min.css?ver=1635151151" type="text/css" media="all">
+<script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.7" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.7" defer async id="revmin-js"></script>
 <script type="text/javascript" src="/wp-content/plugins/oxy-ultimate/assets/js/swiper.jquery.min.js?ver=1635151151" id="ou-swiper-script-js"></script>
 <script type="text/javascript" src="/wp-content/plugins/oxy-ultimate/assets/js/ouacfg-slider.js?ver=1635151151" id="ouacfg-slider-script-js"></script>
 <script type="text/javascript" id="ct-footer-js"></script><style type="text/css" id="ct_code_block_css_35">.oxy-expand-collapse-icon {
